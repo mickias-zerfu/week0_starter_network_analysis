@@ -11,9 +11,9 @@ from time import sleep
 
 
 # Create wrapper classes for using news_sdk in place of newser
-class SlackDataLoader:
+class NewsDataLoader:
     '''
-    Slack exported data IO class.
+    News exported data IO class.
 
     When you open news exported ZIP file, each channel or direct message 
     will have its own folder. Each folder will contain messages from the 
@@ -77,7 +77,7 @@ class SlackDataLoader:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Export Slack history')
+    parser = argparse.ArgumentParser(description='Export News history')
 
     
     parser.add_argument('--zip', help="Name of a zip file to import")
